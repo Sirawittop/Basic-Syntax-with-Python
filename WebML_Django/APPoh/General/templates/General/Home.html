@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Check</title>
+    <style type="text/css">
+        body{text-align:center}
+        
+    </style>
+</head>
+
+<style>
+body {
+    background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148907305.jpg?t=st=1658734197~exp=1658734797~hmac=8911f1137bed92036d8675d6a114de985824bed03dcb67e9729b1e1750a61b9b&w=2000');
+}
+</style>
+
+<body>
+    <body>
+        <h1>Heart Disease Check</h1>   
+    </body>
+    </html>
+    <form method = 'post'>
+        {% csrf_token %}
+        อายุ :  
+      <input type="text"  name = 'age'>
+      <h4>เพศ </h4>
+    <form action="/action_page.php">
+      <input type="checkbox" id="sex1" name="sex1" value="1">
+      <label for="sex1">ชาย</label><br>
+      <input type="checkbox" id="sex2" name="sex2" value="1">
+      <label for="sex2">หญิง</label><br>
+      <h4>อาการเจ็บหน้าอก</h4>
+    <form action="/action_page.php">
+      <input type="checkbox" id="cp1" name="cp1" value="1">
+      <label for="vehicle1">ไม่เจ็บหน้าอกเลย </label><br>
+      <input type="checkbox" id="cp2" name="cp2" value="1">
+      <label for="vehicle2">เจ็บนิดเดียว </label><br>
+      <input type="checkbox" id="cp3" name="cp3" value="1">
+      <label for="vehicle3">เจ็บปลานกลาง</label><br>
+      <input type="checkbox" id="cp4" name="cp4" value="1">
+      <label for="vehicle3">เจ็บมาก</label><br><br><br>
+        ค่าความดันโลหิตขณะพัก :  <input type="text" name = 'trestbps'><br>
+        ระดับคอลเลสเตอร์รอลในเลือด mg/ld  :  <input type="text" name = 'chol'><br>
+      <h4>ค่าระดับน้ำตาลในเลือด </h4>
+      <form action="/action_page.php">
+        <input type="checkbox" id="fbs1" name="fbs1" value="1">
+        <label for="vehicle1">ค่าระดับน้ำตาลในเลือดมากกว่าหรือเท่ากับ 120 </label><br>
+        <input type="checkbox" id="fbs2" name="fbs2" value="1">
+        <label for="vehicle2">ค่าระดับน้ำตาลในเลือดน้อยกว่า120 </label><br><br><br>
+        อัตราเต้นหัวใจหลังออกกำลังกาย :  <input type="text" name = 'thalach'><br><br>
+        <input type="submit" value="Submit"><br>
+        <h2>ข้อมูลของคุณคือ {{data}}</h2>
+        
+<!DOCTYPE html>
